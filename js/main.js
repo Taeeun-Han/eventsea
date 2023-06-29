@@ -1,9 +1,3 @@
-// new Swiper (선택자, 옵션)
-new Swiper('.notice-line .swiper', {
-    direction: 'vertical',
-    autoplay: true,
-    loop: true
-});
 
 new Swiper('.promotion .swiper', {
     slidesPerView: 1, // 한 번에 보여 줄 슬라이드 개수
@@ -26,9 +20,9 @@ new Swiper('.promotion .swiper', {
 
 
 
-var Swiper = new Swiper("#popular .mySwiper", {
+new Swiper("#popular .mySwiper", {
     slidesPerView: 3,
-    spaceBetween: 50,
+    spaceBetween: 0,
     loop: true,
     navigation: {
         prevEl: '#popular .swiper-button-prev',
@@ -36,9 +30,9 @@ var Swiper = new Swiper("#popular .mySwiper", {
     },
 });
 
-var Swiper = new Swiper("#new .mySwiper", {
+new Swiper("#new .mySwiper", {
     slidesPerView: 3,
-    spaceBetween: 50,
+    spaceBetween: 0,
     loop: true,
     navigation: {
         prevEl: '#new .swiper-button-prev',
@@ -46,9 +40,9 @@ var Swiper = new Swiper("#new .mySwiper", {
     },
 });
 
-var Swiper = new Swiper("#recomm .mySwiper", {
+new Swiper("#recomm .mySwiper", {
     slidesPerView: 3,
-    spaceBetween: 50,
+    spaceBetween: 0,
     loop: true,
     navigation: {
         prevEl: '#recomm .swiper-button-prev',
