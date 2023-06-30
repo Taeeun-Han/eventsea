@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventSea</title>
+
+    <!--브라우저 스타일 초기화-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+
+    <!--Google Fonts - 나눔고딕-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!--Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+        integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script defer src="./js/main.js"></script>
+
+
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="inner">
+
+            <a href="/" class="logo">
+                <img src="./img/eventmore logo.png" alt="STARBUCKS" />
+            </a>
+
+            <div class="sub-menu">
+                <ul class="menu">
+                    <li>
+                        <a href="/signin">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Join</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">language</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="main-menu">
+                <li class="item">
+                    <div class="item__name">이용가이드</div>
+                </li>
+                <li class="item">
+                    <div class="item__name">행사개설</div>
+                    <div class="item__contents">
+                        <div class="contents__menu">
+                            <ul class="inner">
+                                <li>
+                                    <h4>착수준비</h4>
+                                    <ul>
+                                        <li>기본정보</li>
+                                        <li>포스터/메인</li>
+                                        <li>참가신청서</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h4>행사준비</h4>
+                                    <ul>
+                                        <li>홍보문자</li>
+                                        <li>리마인드</li>
+                                        <li>AI 문서</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h4>사후관리</h4>
+                                    <ul>
+                                        <li>만족도 질문</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item__name">행사공고</div>
+                </li>
+                <li class="item">
+                    <div class="item__name red">광고문의</div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="sub">
+        <div class="inner">
+            <img src="./img/search__banner.png" alt="행사공고 배너">
+        </div>
+    </section>
+
+    <section id="content">
+        <div class="left">
+            <div class="inner">
+                <div class="title">
+                    <span>검색필터</span>
+                </div>
+
+                <div class="chkbox">
+                    <span>
+                        진행여부
+                        <span class="material-icons">keyboard_arrow_down</span>
+                    </span>
+
+                    <label for="chk1">
+                        <input type="checkbox" name="status" value="진행중" id="chk1">
+                        진행중
+                    </label>
+                    <label for="chk2">
+                        <input type="checkbox" name="status" value="상시모집" id="chk2">
+                        상시모집
+                    </label>
+                    <label for="chk3">
+                        <input type="checkbox" name="status" value="마감" id="chk3">
+                        마감
+                    </label>
+                </div>
+
+                <div class="chkbox">
+                    <span>
+                        행사유형
+                        <span class="material-icons">keyboard_arrow_down</span>
+                    </span>
+
+                    <label for="chk4">
+                        <input type="checkbox" name="type" value="기업회의" id="chk4">
+                        기업회의
+                    </label>
+                    <label for="chk5">
+                        <input type="checkbox" name="type" value="국제회의" id="chk5">
+                        국제회의
+                    </label>
+                    <label for="chk6">
+                        <input type="checkbox" name="type" value="설명회·포럼" id="chk6">
+                        설명회·포럼
+                    </label>
+                    <label for="chk7">
+                        <input type="checkbox" name="type" value="상담회·컨설팅" id="chk7">
+                        상담회·컨설팅
+                    </label>
+                    <label for="chk8">
+                        <input type="checkbox" name="type" value="강연·세미나" id="chk8">
+                        강연·세미나
+                    </label>
+                    <label for="chk9">
+                        <input type="checkbox" name="type" value="축제·공연·전시" id="chk9">
+                        축제·공연·전시
+                    </label>
+                    <label for="chk10">
+                        <input type="checkbox" name="type" value="지원사업" id="chk10">
+                        지원사업
+                    </label>
+                    <label for="chk11">
+                        <input type="checkbox" name="type" value="모임·커뮤니티" id="chk11">
+                        모임·커뮤니티
+                    </label>
+                    <label for="chk12">
+                        <input type="checkbox" name="type" value="교육·취업" id="chk12">
+                        교육·취업
+                    </label>
+                    <label for="chk13">
+                        <input type="checkbox" name="type" value="대회·공모전·포상" id="chk13">
+                        대회·공모전·포상
+                    </label>
+                    <label for="chk14">
+                        <input type="checkbox" name="type" value="창업·스타트업" id="chk14">
+                        창업·스타트업
+                    </label>
+                    <label for="chk15">
+                        <input type="checkbox" name="type" value="마케팅·워크숍" id="chk15">
+                        마케팅·워크숍
+                    </label>
+                </div>
+
+                <div class="chkbox">
+                    <span>
+                        사업분야
+                        <span class="material-icons">keyboard_arrow_down</span>
+                    </span>
+
+                    <label for="chk16">
+                        <input type="checkbox" name="line" value="IT" id="chk16">
+                        IT
+                    </label>
+                    <label for="chk17">
+                        <input type="checkbox" name="line" value="건설·인프라·플랜트" id="chk17">
+                        건설·인프라·플랜트
+                    </label>
+                    <label for="chk18">
+                        <input type="checkbox" name="line" value="관광·여행·서비스" id="chk18">
+                        관광·여행·서비스
+                    </label>
+                    <label for="chk19">
+                        <input type="checkbox" name="line" value="교육" id="chk19">
+                        교육
+                    </label>
+                    <label for="chk20">
+                        <input type="checkbox" name="line" value="광물·에너지" id="chk20">
+                        광물·에너지
+                    </label>
+                    <label for="chk21">
+                        <input type="checkbox" name="line" value="금융" id="chk21">
+                        금융
+                    </label>
+                    <label for="chk22">
+                        <input type="checkbox" name="line" value="기계·장비" id="chk22">
+                        기계·장비
+                    </label>
+                    <label for="chk23">
+                        <input type="checkbox" name="line" value="농림수산식품" id="chk23">
+                        농림수산식품
+                    </label>
+                    <label for="chk24">
+                        <input type="checkbox" name="line" value="디자인·영상" id="chk24">
+                        디자인·영상
+                    </label>
+                    <label for="chk25">
+                        <input type="checkbox" name="line" value="문화콘텐츠" id="chk25">
+                        문화콘텐츠
+                    </label>
+                    <label for="chk26">
+                        <input type="checkbox" name="line" value="생활소비재" id="chk26">
+                        생활소비재
+                    </label>
+                    <label for="chk27">
+                        <input type="checkbox" name="line" value="섬유·패션" id="chk27">
+                        섬유·패션
+                    </label>
+                    <label for="chk28">
+                        <input type="checkbox" name="line" value="예술" id="chk28">
+                        예술
+                    </label>
+                    <label for="chk29">
+                        <input type="checkbox" name="line" value="의료·바이오" id="chk29">
+                        의료·바이오
+                    </label>
+                    <label for="chk30">
+                        <input type="checkbox" name="line" value="인문·사회" id="chk30">
+                        인문·사회
+                    </label>
+                    <label for="chk31">
+                        <input type="checkbox" name="line" value="자동차·수송기기" id="chk31">
+                        자동차·수송기기
+                    </label>
+                    <label for="chk32">
+                        <input type="checkbox" name="line" value="전기·전자" id="chk32">
+                        전기·전자
+                    </label>
+                    <label for="chk33">
+                        <input type="checkbox" name="line" value="철강·금속" id="chk33">
+                        철강·금속
+                    </label>
+                    <label for="chk34">
+                        <input type="checkbox" name="line" value="화학" id="chk34">
+                        화학
+                    </label>
+                    <label for="chk35">
+                        <input type="checkbox" name="line" value="환경" id="chk35">
+                        환경
+                    </label>
+                </div>
+
+                <div class="chkbox">
+                    <span>
+                        참가비용
+                        <span class="material-icons">keyboard_arrow_down</span>
+                    </span>
+
+                    <label for="chk36">
+                        <input type="checkbox" name="fee" value="무료" id="chk36">
+                        무료
+                    </label>
+                    <label for="chk37">
+                        <input type="checkbox" name="fee" value="유료" id="chk37">
+                        유료
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="inner">
+                <div class="three_type">
+                    <ul>
+                        <li>랭킹순</li>
+                        <li>최신등록순</li>
+                        <li>마감일순</li>
+                    </ul>
+                </div>
+
+                <div class="events">
+                    <div class="event">
+                        <img src="./img/001.png" alt="행사1">
+                        <div class="day">
+                            D-27
+                        </div>
+                        <ul class="event-ul">
+                            <li>2023년 06월 25일(일) ~ 2023년 06월 27일(화)</li>
+                            <li>함안 낙화놀이</li>
+                            <li class="fee">무료</li>
+                        </ul>
+                    </div>
+
+                    <div class="event">
+                        <img src="./img/002.png" alt="행사2">
+                        <div class="day">
+                            D-27
+                        </div>
+                        <ul class="event-ul">
+                            <li>2023년 06월 25일(일) ~ 2023년 06월 27일(화)</li>
+                            <li>함안 낙화놀이</li>
+                            <li class="fee">무료</li>
+                        </ul>
+                    </div>
+
+                    <div class="event">
+                        <img src="./img/003.png" alt="행사3">
+                        <div class="day">
+                            D-27
+                        </div>
+                        <ul class="event-ul">
+                            <li>2023년 06월 25일(일) ~ 2023년 06월 27일(화)</li>
+                            <li>함안 낙화놀이</li>
+                            <li class="fee">무료</li>
+                        </ul>
+                    </div>
+
+                    <div class="event">
+                        <img src="./img/004.png" alt="행사1">
+                        <div class="day">
+                            D-27
+                        </div>
+                        <ul class="event-ul">
+                            <li>2023년 06월 25일(일) ~ 2023년 06월 27일(화)</li>
+                            <li>함안 낙화놀이</li>
+                            <li class="fee">무료</li>
+                        </ul>
+                    </div>
+
+                    <div class="event">
+                        <img src="./img/005.png" alt="행사2">
+                        <div class="day">
+                            D-27
+                        </div>
+                        <ul class="event-ul">
+                            <li>2023년 06월 25일(일) ~ 2023년 06월 27일(화)</li>
+                            <li>함안 낙화놀이</li>
+                            <li class="fee">무료</li>
+                        </ul>
+                    </div>
+
+                    <div class="event">
+                        <img src="./img/006.png" alt="행사3">
+                        <div class="day">
+                            D-27
+                        </div>
+                        <ul class="event-ul">
+                            <li>2023년 06월 25일(일) ~ 2023년 06월 27일(화)</li>
+                            <li>함안 낙화놀이</li>
+                            <li class="fee">무료</li>
+                        </ul>
+                    </div>
+
+                    <div class="event">
+                        <img src="./img/007.png" alt="행사1">
+                        <div class="day">
+                            D-27
+                        </div>
+                        <ul class="event-ul">
+                            <li>2023년 06월 25일(일) ~ 2023년 06월 27일(화)</li>
+                            <li>함안 낙화놀이</li>
+                            <li class="fee">무료</li>
+                        </ul>
+                    </div>
+
+                    <div class="event">
+                        <img src="./img/008.png" alt="행사2">
+                        <div class="day">
+                            D-27
+                        </div>
+                        <ul class="event-ul">
+                            <li>2023년 06월 25일(일) ~ 2023년 06월 27일(화)</li>
+                            <li>함안 낙화놀이</li>
+                            <li class="fee">무료</li>
+                        </ul>
+                    </div>
+
+                    <div class="event">
+                        <img src="./img/001.png" alt="행사3">
+                        <div class="day">
+                            D-27
+                        </div>
+                        <ul class="event-ul">
+                            <li>2023년 06월 25일(일) ~ 2023년 06월 27일(화)</li>
+                            <li>함안 낙화놀이</li>
+                            <li class="fee">무료</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <a href="#" class="prev">
+                        <span class="material-icons">
+                            keyboard_double_arrow_left
+                        </span>
+                    </a>
+
+                    <p class="numbers">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                    </p>
+
+                    <a href="#" class="next">
+                        <span class="material-icons">
+                            keyboard_double_arrow_right
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="inner">
+            <h1>
+                <img src="./img/eventmore logo.png" alt="로고">
+            </h1>
+            <ul>
+                <li>
+                    <a href="#">Policy</a>
+                </li>
+                <li>
+                    <a href="#">Terms</a>
+                </li>
+                <li>
+                    <a href="#">Customer</a>
+                </li>
+                <li>
+                    <a href="#">Contact us</a>
+                </li>
+            </ul>
+
+            <address>
+                <span>(주)콜론비</span>
+                <br>
+                사업자등록번호 123-12-12345
+                <br />
+                통신판매업 신고번호 제2023-서울-1234호
+                <br>
+                대표 한동윤 | 개인정보 책임자 한동윤
+                <br>
+                서울 특별시 강남구 강남대로 123
+                <br>
+                <br>
+                고객센터: 02-1544-1234
+                <br>
+                제휴문의: echel@colon-b.com
+            </address>
+
+            <p>
+                Copyright &copy; 2023 Colon:B. ALL Right reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

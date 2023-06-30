@@ -1,0 +1,193 @@
+#sub {
+	width: 1180px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 120px;
+}
+
+#content {
+	width: 1180px;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 150px;
+
+	.left {
+		//border: 2px solid salmon;
+		width: 23%;
+
+		.inner {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			.title {
+				span {
+					font: bold 20px/1 "Nanum Gothic";
+					color: #333;
+				}
+			}
+
+			.chkbox {
+				display: flex;
+				flex-direction: column;
+				margin-top: 30px;
+
+				> span {
+					border-bottom: 2px solid #333;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-bottom: 20px;
+					width: 100px;
+
+					> span {
+						margin-left: 10px;
+					}
+				}
+
+				label {
+					margin-left: 45px;
+					margin-bottom: 7px;
+                    font: normal 14px/1 "Nanum Gothic";
+				}
+			}
+		}
+	}
+
+	.right {
+		//border: 2px solid green;
+		width: 77%;
+
+		.inner {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+
+			.three_type {
+				margin-right: 10px;
+
+				ul {
+					display: flex;
+					justify-content: flex-end;
+					gap: 15px;
+					margin-bottom: 30px;
+
+					li {
+						font: normal 14px/1 "Nanum Gothic";
+						cursor: pointer;
+						color: #a5a5a5;
+						transition: all 0.3s;
+
+						&:hover {
+							color: #333;
+							font: bold 14px/1 "Nanum Gothic";
+						}
+
+						&:last-child {
+							color: #333;
+							font: bold 14px/1 "Nanum Gothic";
+						}
+					}
+				}
+			}
+
+			.events {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+
+				.event {
+					width: 280px;
+					margin-right: 10px;
+					margin-bottom: 50px;
+					position: relative;
+					height: 350px;
+
+					img {
+						width: 280px;
+						height: 280px;
+						object-fit: cover;
+						border: 2px solid #bbb;
+						position: absolute;
+						cursor: pointer;
+						transition: all 0.3s;
+
+						&:hover {
+							transform: scale(1.05);
+							border: none;
+						}
+					}
+
+					.day {
+						width: 70px;
+						height: 30px;
+						background-color: #ff2f31;
+						position: absolute;
+						right: -10px;
+						top: 30px;
+						text-align: center;
+						font: bold 15px/30px "Nanum Gothic";
+						color: #fff;
+						box-shadow: 3px 2px 5px 0px gray;
+						border-top-left-radius: 10px;
+						border-bottom-left-radius: 10px;
+					}
+
+					.event-ul {
+						display: flex;
+						flex-direction: column;
+						position: absolute;
+						bottom: 0px;
+						text-align: left;
+
+						li {
+							font: normal 13px/1.5 "Nanum Gothic";
+							color: #333;
+						}
+
+						.fee {
+							font: bold 14px/1.5 "Nanum Gothic";
+							color: #ff2f31;
+						}
+					}
+				}
+			}
+
+			.pagination {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-top: 100px;
+
+				a {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font: 13px/1 "Nanum Gothic";
+					color: #333;
+					transition: 0.3s;
+					padding: 5px;
+
+					&:hover {
+						color: #111;
+						font-weight: bold;
+					}
+
+                    span{
+                        margin: 0 20px;
+                    }
+				}
+
+				.numbers {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					gap: 20px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

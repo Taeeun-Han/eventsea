@@ -1,3 +1,166 @@
+#sub {
+  width: 1180px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+#content {
+  width: 1180px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+#content .left {
+  width: 23%;
+}
+#content .left .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#content .left .inner .title span {
+  font: bold 20px/1 "Nanum Gothic";
+  color: #333;
+}
+#content .left .inner .chkbox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+#content .left .inner .chkbox > span {
+  border-bottom: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100px;
+}
+#content .left .inner .chkbox > span > span {
+  margin-left: 10px;
+}
+#content .left .inner .chkbox label {
+  margin-left: 45px;
+  margin-bottom: 7px;
+  font: normal 14px/1 "Nanum Gothic";
+}
+#content .right {
+  width: 77%;
+}
+#content .right .inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#content .right .inner .three_type {
+  margin-right: 10px;
+}
+#content .right .inner .three_type ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+#content .right .inner .three_type ul li {
+  font: normal 14px/1 "Nanum Gothic";
+  cursor: pointer;
+  color: #a5a5a5;
+  transition: all 0.3s;
+}
+#content .right .inner .three_type ul li:hover {
+  color: #333;
+  font: bold 14px/1 "Nanum Gothic";
+}
+#content .right .inner .three_type ul li:last-child {
+  color: #333;
+  font: bold 14px/1 "Nanum Gothic";
+}
+#content .right .inner .events {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#content .right .inner .events .event {
+  width: 280px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  position: relative;
+  height: 350px;
+}
+#content .right .inner .events .event img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border: 2px solid #bbb;
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#content .right .inner .events .event img:hover {
+  transform: scale(1.05);
+  border: none;
+}
+#content .right .inner .events .event .day {
+  width: 70px;
+  height: 30px;
+  background-color: #ff2f31;
+  position: absolute;
+  right: -10px;
+  top: 30px;
+  text-align: center;
+  font: bold 15px/30px "Nanum Gothic";
+  color: #fff;
+  box-shadow: 3px 2px 5px 0px gray;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#content .right .inner .events .event .event-ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0px;
+  text-align: left;
+}
+#content .right .inner .events .event .event-ul li {
+  font: normal 13px/1.5 "Nanum Gothic";
+  color: #333;
+}
+#content .right .inner .events .event .event-ul .fee {
+  font: bold 14px/1.5 "Nanum Gothic";
+  color: #ff2f31;
+}
+#content .right .inner .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+#content .right .inner .pagination a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 13px/1 "Nanum Gothic";
+  color: #333;
+  transition: 0.3s;
+  padding: 5px;
+}
+#content .right .inner .pagination a:hover {
+  color: #111;
+  font-weight: bold;
+}
+#content .right .inner .pagination a span {
+  margin: 0 20px;
+}
+#content .right .inner .pagination .numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
 /*COMMON*/
 body {
   font-family: "Nanum Gothic", sans-serif;
@@ -174,6 +337,7 @@ header .inner .main-menu .item:hover .item__contents {
   position: relative;
   overflow: hidden;
   background-color: #f6f5f0;
+  margin-top: 120px;
 }
 #visual .promotion {
   width: 100%;
@@ -261,6 +425,7 @@ header .inner .main-menu .item:hover .item__contents {
   border: 2px solid #bbb;
   position: absolute;
   top: 5px;
+  cursor: pointer;
 }
 #popular .inner .swiper .swiper-wrapper .swiper-slide .day {
   width: 70px;
@@ -336,6 +501,7 @@ header .inner .main-menu .item:hover .item__contents {
   border: 2px solid #bbb;
   position: absolute;
   top: 5px;
+  cursor: pointer;
 }
 #new .inner .swiper .swiper-wrapper .swiper-slide .day {
   width: 70px;
@@ -411,6 +577,7 @@ header .inner .main-menu .item:hover .item__contents {
   border: 2px solid #bbb;
   position: absolute;
   top: 5px;
+  cursor: pointer;
 }
 #recomm .inner .swiper .swiper-wrapper .swiper-slide .day {
   width: 70px;
