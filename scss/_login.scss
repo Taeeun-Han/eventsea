@@ -1,0 +1,129 @@
+#login {
+	margin-top: 500px;
+	margin: 120px auto;
+
+	.inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.login__title {
+			margin-top: 100px;
+			margin-bottom: 50px;
+
+			h4 {
+				font: bold 30px/1 "Nanum Gothic";
+			}
+		}
+
+		.login__input {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 20px;
+
+			input {
+				width: 400px;
+				padding: 10px;
+				font: normal 12px/1 "Nanum Gothic";
+				color: #bbb;
+				border-radius: 50px;
+				border: 1px solid #333;
+			}
+
+			.input__pw {
+				position: relative;
+				display: flex;
+				align-items: center;
+
+				.material-icons {
+					position: absolute;
+					right: 20px;
+				}
+			}
+		}
+
+		.button {
+			margin-top: 50px;
+
+			.inner {
+				button {
+					width: 400px;
+					border-radius: 50px;
+					background-color: #ff3030;
+					color: #fff;
+					border: none;
+					font: bold 14px/1 "Nanum Gothic";
+					letter-spacing: 1px;
+				}
+			}
+		}
+
+		.login__txt {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: -120px;
+			font: normal 14px/1 "Nanum Gothic";
+			width: 400px;
+			padding: 0px 10px;
+			margin-bottom: 100px;
+
+			.stay__login {
+				display: flex;
+				align-items: center;
+
+				.material-icons {
+					margin-right: 5px;
+					font-size: 30px;
+				}
+			}
+		}
+
+		.sns__txt {
+			width: 400px;
+			display: flex;
+			align-items: center;
+			margin-bottom: 50px;
+			flex-direction: column;
+
+			span {
+				font: normal 16px/1 "Nanum Gothic";
+				margin-bottom: 30px;
+			}
+
+			.sns__img {
+				width: 400px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				cursor: pointer;
+			}
+		}
+
+		.line {
+			width: 400px;
+			height: 2px;
+			background-color: #ddd;
+			margin-bottom: 50px;
+		}
+
+		.button__white {
+            margin-bottom: 50px;
+
+			.inner {
+				button {
+					width: 400px;
+					height: 40px;
+					border-radius: 50px;
+					background-color: #fff;
+					color: #111;
+					border: 1px solid #111;
+					font: bold 14px/1 "Nanum Gothic";
+					letter-spacing: 1px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}

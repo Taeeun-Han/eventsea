@@ -161,6 +161,202 @@
   text-align: center;
 }
 
+#join {
+  margin-top: 500px;
+  margin: 120px auto;
+}
+#join .inner .join__1st {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#join .inner .join__1st .join__title {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+#join .inner .join__1st .join__title h4 {
+  font: bold 30px/1 "Nanum Gothic";
+}
+#join .inner .join__1st .inputboxs {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+#join .inner .join__1st .inputboxs label p {
+  font: bold 14px/1 "Nanum Gothic";
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+#join .inner .join__1st .inputboxs label input {
+  width: 400px;
+  padding: 10px;
+  font: normal 12px/1 "Nanum Gothic";
+  color: #bbb;
+  border-radius: 50px;
+  border: 1px solid #333;
+}
+#join .join__2nd {
+  background-color: #f2f2f2;
+  margin-bottom: 100px;
+}
+#join .join__2nd .terms {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px 50px 750px;
+}
+#join .join__2nd .terms h5 {
+  font: bold 16px/1 "Nanum Gothic";
+  margin-bottom: 30px;
+}
+#join .join__2nd .terms .checkboxs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#join .join__2nd .terms .checkboxs label {
+  display: flex;
+  align-items: center;
+}
+#join .join__2nd .terms .checkboxs label p {
+  font: normal 14px/1 "Nanum Gothic";
+  margin-left: 10px;
+}
+#join .join__2nd .terms .checkboxs label p span {
+  text-decoration: underline;
+  font: bold 14px/1 "Nanum Gothic";
+}
+#join .join__2nd .terms .checkboxs label .agree {
+  font: bold 14px/1 "Nanum Gothic";
+}
+#join .join__2nd .terms .checkboxs label input {
+  font: normal 12px/1 "Nanum Gothic";
+  color: #bbb;
+  border-radius: 50px;
+  border: 1px solid #333;
+}
+#join .button {
+  margin: 0 auto;
+}
+#join .button button {
+  width: 400px;
+  border-radius: 50px;
+  background-color: #ff3030;
+  color: #fff;
+  border: none;
+  font: bold 14px/1 "Nanum Gothic";
+  letter-spacing: 1px;
+}
+
+#login {
+  margin-top: 500px;
+  margin: 120px auto;
+}
+#login .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#login .inner .login__title {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+#login .inner .login__title h4 {
+  font: bold 30px/1 "Nanum Gothic";
+}
+#login .inner .login__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#login .inner .login__input input {
+  width: 400px;
+  padding: 10px;
+  font: normal 12px/1 "Nanum Gothic";
+  color: #bbb;
+  border-radius: 50px;
+  border: 1px solid #333;
+}
+#login .inner .login__input .input__pw {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#login .inner .login__input .input__pw .material-icons {
+  position: absolute;
+  right: 20px;
+}
+#login .inner .button {
+  margin-top: 50px;
+}
+#login .inner .button .inner button {
+  width: 400px;
+  border-radius: 50px;
+  background-color: #ff3030;
+  color: #fff;
+  border: none;
+  font: bold 14px/1 "Nanum Gothic";
+  letter-spacing: 1px;
+}
+#login .inner .login__txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -120px;
+  font: normal 14px/1 "Nanum Gothic";
+  width: 400px;
+  padding: 0px 10px;
+  margin-bottom: 100px;
+}
+#login .inner .login__txt .stay__login {
+  display: flex;
+  align-items: center;
+}
+#login .inner .login__txt .stay__login .material-icons {
+  margin-right: 5px;
+  font-size: 30px;
+}
+#login .inner .sns__txt {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  flex-direction: column;
+}
+#login .inner .sns__txt span {
+  font: normal 16px/1 "Nanum Gothic";
+  margin-bottom: 30px;
+}
+#login .inner .sns__txt .sns__img {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+#login .inner .line {
+  width: 400px;
+  height: 2px;
+  background-color: #ddd;
+  margin-bottom: 50px;
+}
+#login .inner .button__white {
+  margin-bottom: 50px;
+}
+#login .inner .button__white .inner button {
+  width: 400px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #111;
+  border: 1px solid #111;
+  font: bold 14px/1 "Nanum Gothic";
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
 /*COMMON*/
 body {
   font-family: "Nanum Gothic", sans-serif;
@@ -200,7 +396,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: #fff;
+  background-color: #fff !important;
   z-index: 9;
 }
 header .inner {
@@ -245,12 +441,12 @@ header .inner .sub-menu ul li:first-child::before {
 }
 header .inner .sub-menu ul li a {
   font-size: 12px;
-  color: #656565;
+  color: #656565 !important;
   padding: 11px 16px;
   display: block;
 }
 header .inner .sub-menu ul li a:hover {
-  color: #000;
+  color: #000 !important;
 }
 header .inner .main-menu {
   display: flex;
@@ -259,20 +455,26 @@ header .inner .main-menu {
   right: 0;
   z-index: 1;
 }
+header .inner .main-menu .item {
+  color: #111 !important;
+}
 header .inner .main-menu .item .item__name {
   padding: 10px 20px 34px 20px;
   font-family: Arial, sans-serif;
   font-size: 13px;
   font: normal 14px/1 "Nanum Gothic";
 }
+header .inner .main-menu .item .item__name a {
+  color: #111 !important;
+}
 header .inner .main-menu .item:hover .item__name {
-  color: #111;
+  color: #111 !important;
   font-weight: bold;
   cursor: pointer;
 }
 header .inner .main-menu .item:last-child {
-  background-color: #ff2f31;
-  color: #fff;
+  background-color: #ff2f31 !important;
+  color: #fff !important;
   font-weight: bold;
   cursor: pointer;
   border-radius: 50px;
@@ -281,8 +483,8 @@ header .inner .main-menu .item:last-child {
 }
 header .inner .main-menu .item:hover .red {
   padding: 10px 20px 10px 20px;
-  background-color: #ff2f31;
-  color: #fff;
+  background-color: #ff2f31 !important;
+  color: #fff !important;
   font-weight: bold;
   cursor: pointer;
   border-radius: 50px;
@@ -299,6 +501,7 @@ header .inner .main-menu .item .item__contents .contents__menu {
   background-color: #fff;
   height: 160px;
   border-top: 5px solid #ddd;
+  box-shadow: none !important;
 }
 header .inner .main-menu .item .item__contents .contents__menu > ul {
   display: flex;

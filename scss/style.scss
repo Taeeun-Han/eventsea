@@ -1,6 +1,8 @@
 @charset 'utf-8';
 
 @import "_search.scss";
+@import "_join.scss";
+@import "_login.scss";
 
 /*COMMON*/
 body {
@@ -39,7 +41,7 @@ header {
 	width: 100%;
 	position: fixed;
 	top: 0;
-	background-color: #fff;
+	background-color: #fff !important;
 	z-index: 9;
 
 	.inner {
@@ -88,12 +90,12 @@ header {
 
 					a {
 						font-size: 12px;
-						color: #656565;
+						color: #656565 !important;
 						padding: 11px 16px;
 						display: block;
 
 						&:hover {
-							color: #000;
+							color: #000 !important;
 						}
 					}
 				}
@@ -108,23 +110,29 @@ header {
 			z-index: 1;
 
 			.item {
+				color: #111 !important;
+
 				.item__name {
 					padding: 10px 20px 34px 20px;
 					font-family: Arial, sans-serif;
 					font-size: 13px;
 					font: normal 14px/1 "Nanum Gothic";
 					//transition: all 0.3s;
+
+					a {
+						color: #111 !important;
+					}
 				}
 
 				&:hover .item__name {
-					color: #111;
+					color: #111 !important;
 					font-weight: bold;
 					cursor: pointer;
 				}
 
 				&:last-child {
-					background-color: #ff2f31;
-					color: #fff;
+					background-color: #ff2f31 !important;
+					color: #fff !important;
 					font-weight: bold;
 					cursor: pointer;
 					border-radius: 50px;
@@ -134,8 +142,8 @@ header {
 
 				&:hover .red {
 					padding: 10px 20px 10px 20px;
-					background-color: #ff2f31;
-					color: #fff;
+					background-color: #ff2f31 !important;
+					color: #fff !important;
 					font-weight: bold;
 					cursor: pointer;
 					border-radius: 50px;
@@ -153,6 +161,7 @@ header {
 						background-color: #fff;
 						height: 160px;
 						border-top: 5px solid #ddd;
+						box-shadow: none !important;
 
 						> ul {
 							display: flex;

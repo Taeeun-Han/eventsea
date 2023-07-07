@@ -1,0 +1,108 @@
+#join {
+	margin-top: 500px;
+	margin: 120px auto;
+
+	.inner {
+		.join__1st {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.join__title {
+				margin-top: 100px;
+				margin-bottom: 50px;
+
+				h4 {
+					font: bold 30px/1 "Nanum Gothic";
+				}
+			}
+
+			.inputboxs {
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+				gap: 30px;
+				margin-bottom: 100px;
+
+				label {
+					p {
+						font: bold 14px/1 "Nanum Gothic";
+						margin-bottom: 10px;
+						margin-left: 5px;
+					}
+
+					input {
+						width: 400px;
+						padding: 10px;
+						font: normal 12px/1 "Nanum Gothic";
+						color: #bbb;
+						border-radius: 50px;
+						border: 1px solid #333;
+					}
+				}
+			}
+		}
+	}
+
+	.join__2nd {
+		background-color: #f2f2f2;
+		margin-bottom: 100px;
+
+		.terms {
+			display: flex;
+			flex-direction: column;
+			padding: 50px 0px 50px 750px;
+
+			h5 {
+				font: bold 16px/1 "Nanum Gothic";
+				margin-bottom: 30px;
+			}
+
+			.checkboxs {
+				display: flex;
+				flex-direction: column;
+				gap: 30px;
+
+				label {
+					display: flex;
+					align-items: center;
+
+					p {
+						font: normal 14px/1 "Nanum Gothic";
+						margin-left: 10px;
+
+						span {
+							text-decoration: underline;
+							font: bold 14px/1 "Nanum Gothic";
+						}
+					}
+
+					.agree {
+						font: bold 14px/1 "Nanum Gothic";
+					}
+
+					input {
+						font: normal 12px/1 "Nanum Gothic";
+						color: #bbb;
+						border-radius: 50px;
+						border: 1px solid #333;
+					}
+				}
+			}
+		}
+	}
+
+	.button {
+		margin: 0 auto;
+
+		button {
+			width: 400px;
+			border-radius: 50px;
+			background-color: #ff3030;
+			color: #fff;
+			border: none;
+			font: bold 14px/1 "Nanum Gothic";
+			letter-spacing: 1px;
+		}
+	}
+}
